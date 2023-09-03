@@ -4,7 +4,7 @@ public class Searching {
 
     static Scanner in = new Scanner(System.in);
     public static void main(String[] args) throws InterruptedException {
-        int choice;
+        int ch;
 
         do {
             System.out.println("\t\t\t   Menu");
@@ -16,9 +16,9 @@ public class Searching {
             System.out.println("\t5. Exit");
             System.out.println("\t----------------------------------------");
             System.out.print("\tEnter your choice: ");
-            choice = in.nextInt();
+            ch = in.nextInt();
 
-            switch (choice) {
+            switch (ch) {
                 case 1: linearSearch();
                         break;
                 case 2: binarySearch();
@@ -29,9 +29,9 @@ public class Searching {
                         break;
                 case 5: System.out.println("\tExiting.......");
                         break;
-                default: System.out.println("\tInvalid choice.");
+                default: System.out.println("\tInvalid ch.");
             }
-        } while (choice != 5);
+        } while (ch != 5);
         in.close();
     }
 
